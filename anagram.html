@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prove Your Love 💖</title>
+  <link rel="stylesheet" href="anagram.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Not so fast! You have to earn your way in 😏</h1>
+    <p class="subtitle">I know my baby is smart, no pressure💕</p>
+    <button id="playBtn">Play</button>
+
+    <div id="gameArea" class="hidden">
+      <div class="top-bar">
+        <p id="timer">⏰ 30s</p>
+        <p id="score">💗 Score: 0</p>
+      </div>
+
+<div id="currentWord" class="word-display"></div>
+
+<!-- Word input tiles (pink squares) -->
+<div class="word-tiles" id="wordTiles"></div>
+
+<!-- Available letter buttons (now squares) -->
+<div class="letters">
+  <button class="tile">M</button>
+  <button class="tile">Y</button>
+  <button class="tile">L</button>
+  <button class="tile">O</button>
+  <button class="tile">V</button>
+  <button class="tile">E</button>
+</div>
+
+      <div class="controls">
+        <button id="clearBtn">Clear</button>
+        <button id="submitBtn">Submit</button>
+      </div>
+
+      <div id="foundWords"></div>
+    </div>
+  </div>
+
+  <!-- Instructions Popup -->
+  <div id="instructions" class="popup hidden">
+    <div class="popup-content">
+      <h2>Instructions 💌</h2>
+      <p>This should be easy for you 😏<br>
+      You have <b>30 seconds</b> to get <b>3000 points</b>.<br>
+      Tap or type letters to form words!</p>
+      <button id="continueBtn">Continue</button>
+    </div>
+  </div>
+
+  <!-- Result Popup -->
+  <div id="resultPopup" class="popup hidden">
+    <div class="popup-content">
+      <h2 id="resultTitle"></h2>
+      <button id="resultBtn"></button>
+    </div>
+  </div>
+
+  <!-- Countdown -->
+  <div id="countdown" class="countdown hidden"></div>
+
+ <script src="anagram.js" defer></script>
+</body>
+</html>
